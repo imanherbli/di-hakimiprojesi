@@ -66,7 +66,6 @@ Route::delete('/videolar/{id}', [VideolarController::class, 'destroy'])->name('v
 
 Route::get('/before_after', [BeforeAfterController::class, 'index'])->name('before_after');
 Route::get('/before_after/create', [BeforeAfterController::class, 'create'])->name('before_after.create');
-Route::get('/before_after/store', [BeforeAfterController::class, 'store'])->name('before_after.store');
 Route::post('before_after/store', [BeforeAfterController::class, 'store'])->name('before_after.store');
  Route::delete('before_after/{id}', [BeforeAfterController::class, 'destroy'])->name('before_after.destroy');
  
